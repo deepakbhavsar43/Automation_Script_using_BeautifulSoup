@@ -11,7 +11,7 @@ def readdir():
     dir = os.walk(basepath)
 
     for path, subdirs, files in dir:
-        # print(f"path : {path}\nsubdir : {subdirs}\nfiles : {files}\n")
+        print(f"path : {path}\nsubdir : {subdirs}\nfiles : {files}\n")
         for file in files:
             temp = joinPath(path + '\\', file)
             fileList.append(temp)
